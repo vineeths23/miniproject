@@ -1,0 +1,183 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #34495e;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  /* Header and Navigation */
+  .navbar {
+    background-color: var(--secondary-color) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .navbar-brand {
+    font-family: cursive;
+    font-weight: 700;
+    color: var(--primary-color) !important;
+  }
+  
+  .nav-link {
+    color: var(--light-color) !important;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--primary-color) !important;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 2rem 0;
+  }
+  
+  h1, h2, h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+  }
+  
+  /* Forms */
+  .form-control {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: none;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Upload Section */
+  #upload {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    border-radius: 8px;
+    padding: 2rem;
+  }
+  
+  #contact h2 {
+    color: var(--light-color);
+  }
+  
+  #contact .form-control {
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    color: var(--light-color);
+  }
+  
+  #contact .form-control::placeholder {
+    color: rgba(255,255,255,0.5);
+  }
+  
+  /* Gmail Column */
+  .gmail-column {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .gmail-column:hover {
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+  }
+  
+  .gmail-column h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .gmail-column .btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .gmail-column .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .gmail-column {
+      position: static;
+      transform: none;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    
+    #upload, #contact {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in;
+  }
+  
+  /* Additional Styles */
+  .card {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .img-thumbnail {
+    transition: opacity 0.3s ease;
+  }
+  
+  .img-thumbnail:hover {
+    opacity: 0.8;
+  }
