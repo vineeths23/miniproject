@@ -1,1 +1,81 @@
+.contact {
+    width: 100%;
+    max-width: 400px;
+}
 
+.container {
+    background-color: #2c3e50;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.section-title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.section-title h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.table {
+    margin-bottom: 20px;
+}
+
+.table td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.btn-success {
+    background-color: #030303;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-success:hover {
+    background-color: #101410;
+    box-shadow: 0 0 10px rgba(69, 160, 73, 0.5);
+}
+
+.form-icon {
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
